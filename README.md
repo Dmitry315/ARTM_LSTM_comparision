@@ -21,6 +21,7 @@ For each sentence get phi rows by words in sentences, and calculate exp(sum{word
 (this works faster then calculate likelihood and have nearly the same accuracy in final result) <br>
 And then aggregate this <n_topics> features with RandomForestClassifier from sklearn. <br>
 Result is not so good: accuracy on test set ~ 0.41 <br>
+(Optimal parameters: n_topics=200, decor_tau=50000.0, sparse_tau=100)<br>
 <h2> LSTM approach</h2>
 I don't know whether it is the best option for emotion detection, but I'v tried :). <br>
 NN has the folowing structure: <br>
@@ -33,7 +34,7 @@ Sequential([ <br>
 Optimizer - Adam, criteria - Categorical crossentropy, learing rate = 0.001 <br>
 In notebook I implement it with tensorflow (in pytorch it appears more difficult, then I thought). <br>
 Results are quite better: accuracy on test set ~ 0.75 <br>
-This result get without any hyperparameter optimisation, unlike in ARTM try.
+This result get without any hyperparameter optimisation, unlike in ARTM try. <br>
 <h2>Conclusions</h2>
 Here we can see that ARTM is not sufficient for emotion detection problem and loses even to LSTM model. <br>
 I think, the main reasons why it happens:<br> 

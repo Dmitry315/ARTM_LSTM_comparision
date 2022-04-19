@@ -10,6 +10,7 @@ Columns: <br>
 - Emotion: target. Possible values: {"happy", "sadness", "anger", "fear", "love"} <br>
 The "Text" column is quite clean, but need preprocessing <br>
 <h2> Preprocessing </h2>
+(Notebook was run on google collab, so for running on local PC you need to change file pathes in code)
 1) Tokenization <br>
 2) Lemmatization with pymorphy2 <br>
 3) Remove stopwords. (nltk.corpus.stopwords.words('english')) <br>

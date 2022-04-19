@@ -39,6 +39,6 @@ This result get without any hyperparameter optimisation, unlike in ARTM try. <br
 <h2>Conclusions</h2>
 Here we can see that ARTM is not sufficient for emotion detection problem and loses even to LSTM model. <br>
 I think, the main reasons why it happens:<br> 
-- short sentences in dataset (it affects LSTM model though, but not so destructive)<br>
+- short sentences in dataset (it also affects LSTM model, but not so destructive)<br>
 - "bag of word" assumption. <br>
-As I mentioned in "LSTM approach" part
+As I mentioned in "LSTM approach" part, there are other approaches for emotions detection in text.And it will be useful to study them.
